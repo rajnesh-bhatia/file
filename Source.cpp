@@ -3,11 +3,13 @@ using namespace std;
 
 void display(int *a);
 void swapper(int *a, int *b);
-
+void hello();
 int main()
 {
 	int a[10] = { 21, 15, 22, 4, 98, 1, 10, 5, 6, 58 };
 	display(a);
+	cout<<endl;
+	hello();
 	for (int i = 9; i >0; i--)
 	{
 		for (int j = 0; j < i; j++)
@@ -25,6 +27,9 @@ void swapper(int *a, int *b)
 	temp = *a;
 	*a = *b;
 	*b = temp;
+}
+void hello(){
+	cout<<"Hello";
 }
 void display(int *a)
 {
